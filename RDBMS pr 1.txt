@@ -1,0 +1,5 @@
+1) javascript:sc_postSavedSQL('766606209431135','pr1','7/10','SC','SYSTEM');
+2)javascript:sc_postSavedSQL('783824545309738','pr1_2','pr 1 no 2 che','SC','SYSTEM');
+3)javascript:sc_postSavedSQL('783518658308105','pr1_3','pr 1 no 3 che','SC','SYSTEM');
+4)javascript:sc_postSavedSQL('787229019434074','pr1_4','pr 1no 4','SC','SYSTEM');
+5)javascript:sc_postSavedSQL('788513267467388','pr1_5','pr 1 no 5','SC','SYSTEM');
