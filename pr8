@@ -1,0 +1,33 @@
+select tm,
+case
+when tm >=90 and tm <=100 then 'a grade'
+when tm >=80 and tm <=89 then 'b grade'
+when tm >=70 and tm <=79 then 'c grade'
+when tm >=60 and tm <=69 then 'd grade'
+when tm >=50 and tm <=59 then 'e grade'
+else ' you fail'
+end as result
+from std
+select * from std;
+
+select 
+case
+when tm >=90 and tm <=100 then 'a grade'
+when tm >=80 and tm <=89 then 'b grade'
+when tm >=70 and tm <=79 then 'c grade'
+when tm >=60 and tm <=69 then 'd grade'
+when tm >=50 and tm <=59 then 'e grade'
+else ' you fail'
+end as result,
+min(tm) as minimummarks,
+max(tm) as maimummarks
+from std
+group by 
+case
+when tm >=90 and tm <=100 then 'a grade'
+when tm >=80 and tm <=89 then 'b grade'
+when tm >=70 and tm <=79 then 'c grade'
+when tm >=60 and tm <=69 then 'd grade'
+when tm >=50 and tm <=59 then 'e grade'
+else ' you fail'
+end 
