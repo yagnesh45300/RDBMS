@@ -1,0 +1,40 @@
+CREATE TABLE debitacc
+(no number(11),
+ name varchar2(12),
+ balance number(13));
+
+desc debitacc;
+
+select * from debitacc;
+
+create view de_view
+as select * from debitacc;
+
+insert into de_view values(13,'mohit',102102);
+
+insert into debitacc values(14,'bhumi',101020);
+insert into debitacc values(11,'hiral',101020);
+
+
+delete from debitacc where name='abhi';
+delete from de_view where name='dharmik';
+
+create view systm
+as select no from debitacc;
+
+create view systm1
+as select no from debitacc where no=11;
+
+CREATE TABLE bmo
+(no number(11) primary key,
+ name varchar2(12),
+ balance number(13));
+insert into bmo values(2,'bhumi',11000);
+
+CREATE TABLE bmo2
+(no number(11) references bmo(no),
+ type varchar2(12)
+ );
+insert into bmo2 values(2,'current');
+
+select * from bmo2;
